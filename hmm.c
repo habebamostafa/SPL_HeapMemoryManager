@@ -18,7 +18,7 @@ typedef struct block_header {
 
 #define MAGIC_NUMBER 0xDEADBEEF
 #define HEADER_SIZE ALIGN(sizeof(block_header_t))
-#define MIN_ALLOC_SIZE 32
+#define MIN_ALLOC_SIZE 4096
 
 static char heap[HEAP_SIZE];              
 static void *program_break = heap;              
